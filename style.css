@@ -6,6 +6,8 @@ body {
 #main_header {
   padding: 5px;
   background-color: #ee6c4d;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .main_header {
@@ -20,4 +22,130 @@ body {
 .button {
   margin: 5px;
   padding: 5px;
+}
+
+.area_data_div {
+  padding: 5px;
+}
+
+.monster_input_div {
+  padding: 5px;
+}
+
+h2,
+h1 {
+  color: #e0fbfc;
+  font-size: 50px;
+}
+
+.search_div {
+  padding: 5px;
+}
+
+.header {
+  background-color: #ee6c4d;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Info Buttons */
+#name_button {
+  background-color: #293241;
+  color: #e0fbfc;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#name_button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
+#desc_button {
+  background-color: #293241;
+  color: #e0fbfc;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#desc_button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
+#size_button {
+  background-color: #293241;
+  color: #e0fbfc;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#size_button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
+#type_button {
+  background-color: #293241;
+  color: #e0fbfc;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#type_button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
+#armour_class_type_button {
+  background-color: #293241;
+  color: #e0fbfc;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#armour_class_type_button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
+#actions_button {
+  background-color: #293241;
+  color: #e0fbfc;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#actions_button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
+.buttons {
+  background-color: #ee6c4d;
+  padding: 5px;
+}
+
+/* nav buttons */
+#spells {
+  background-color: #293241;
+  height: 50px;
+  width: auto;
+  color: #e0fbfc;
+  margin: 20px;
+}
+
+#races {
+  background-color: #293241;
+  height: 50px;
+  width: auto;
+  color: #e0fbfc;
+  margin: 20px;
 }

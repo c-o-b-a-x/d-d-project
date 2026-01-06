@@ -9,23 +9,140 @@ const requestOptions = {
 
 console.log("hello");
 
-const monster = document.querySelector(".monster");
+const monster = document.getElementById("monster");
 
-const search_button = document.getElementById("search_button");
+const mosnter_info_display = document.getElementById("mosnter_info_display");
 
-const mosnter_info_display = document.getElementById(".mosnter_info_display");
+const submit_button = document.getElementById("submit_button");
 
-const monster_data = monster.value.trim();
+const name_button = document.getElementById("name_button");
 
-url = `https://www.dnd5eapi.co/api/2014/monsters/${monster_data}`;
+const desc_button = document.getElementById("desc_button");
 
-search_button.addEventListener("click", () => {
+const size_button = document.getElementById("size_button");
+
+const type_button = document.getElementById("type_button");
+
+const armour_class_type_button = document.getElementById(
+  "armour_class_type_button"
+);
+
+let stored_data = "";
+
+submit_button.addEventListener("click", () => {
+  stored_data = monster.value.trim();
+});
+
+name_button.addEventListener("click", () => {
   function getMonster() {
-    fetch(url, requestOptions)
-      .then((response) => response.text())
-      .then((result) => console.log(result))
+    fetch(
+      `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        mosnter_info_display.textContent = result.name;
+        console.log(result);
+      })
       .catch((error) => console.error(error));
-    mosnter_info_display.append(result);
   }
   getMonster();
+  monster.value = "";
+});
+
+desc_button.addEventListener("click", () => {
+  function getMonster() {
+    fetch(
+      `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        mosnter_info_display.textContent = result.desc;
+        console.log(result);
+      })
+      .catch((error) => console.error(error));
+  }
+  getMonster();
+  monster.value = "";
+});
+
+size_button.addEventListener("click", () => {
+  function getMonster() {
+    fetch(
+      `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        mosnter_info_display.textContent = result.size;
+        console.log(result);
+      })
+      .catch((error) => console.error(error));
+  }
+  getMonster();
+  monster.value = "";
+});
+
+type_button.addEventListener("click", () => {
+  function getMonster() {
+    fetch(
+      `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        mosnter_info_display.textContent = result.type;
+        console.log(result);
+      })
+      .catch((error) => console.error(error));
+  }
+  getMonster();
+  monster.value = "";
+});
+
+armour_class_type_button.addEventListener("click", () => {
+  function getMonster() {
+    fetch(
+      `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        mosnter_info_display.textContent = result.armor_class[0].type;
+        console.log(result);
+      })
+      .catch((error) => console.error(error));
+  }
+  getMonster();
+  monster.value = "";
+});
+
+actions_button.addEventListener("click", () => {
+  function getMonster() {
+    fetch(
+      `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        mosnter_info_display.textContent = result.actions[0];
+        console.log(result);
+      })
+      .catch((error) => console.error(error));
+  }
+  getMonster();
+  monster.value = "";
 });

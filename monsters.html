@@ -11,12 +11,35 @@
       <div class="main_title">
         <h1 class="main_header">DND Monsters</h1>
       </div>
+      <div class="nav_buttons">
+        <a href="spells.html"><button id="spells">Spells</button></a>
+        <a href="spells.html"><button id="races">Races</button></a>
+      </div>
     </div>
     <div id="display_info">
-      <div class="button"
-        ><input class="monster" type="text" />
-        <button id="search_button" type="submit">Search</button></div
-      >
+      <div class="button">
+        <div class="monster_input_div">
+          <h2>Monster</h2>
+          <input id="monster" type="text" />
+        </div>
+
+        <div class="search_div">
+          <button id="submit_button" type="submit">Submit</button>
+        </div>
+      </div>
+      <div class="header">
+        <h1>Info</h1>
+      </div>
+      <div class="buttons">
+        <button id="name_button" type="submit">Name</button>
+        <button id="desc_button" type="submit">Desc</button>
+        <button id="size_button" type="submit">Size</button>
+        <button id="type_button" type="submit">Type</button>
+        <button id="armour_class_type_button" type="submit"
+          >Armour Class Type</button
+        >
+        <button id="actions_button" type="submit">Actions</button>
+      </div>
 
       <div id="mosnter_info_display"></div>
     </div>
