@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Monster Info</title>
+  </head>
+  <body>
+    <div id="main_header">
+      <div class="main_title">
+        <h1 class="main_header">DND Monsters</h1>
+      </div>
+      <div class="nav_buttons">
+        <a href="index.html"><button id="spells">Home</button></a>
+
+        <a href="spells.html"><button id="spells">Spells</button></a>
+        <a href="spells.html"><button id="races">Races</button></a>
+      </div>
+    </div>
+    <div id="display_info">
+      <div class="button">
+        <div class="monster_input_div">
+          <h2>Monster</h2>
+          <input id="monster" type="text" />
+        </div>
+
+        <div class="search_div">
+          <button id="submit_button" type="submit">Submit</button>
+        </div>
+      </div>
+      <div class="header">
+        <h1>Info</h1>
+      </div>
+      <div class="buttons">
+        <button class="stat_button" id="name_button" type="submit">Name</button>
+        <button class="stat_button" id="desc_button" type="submit">Desc</button>
+        <button class="stat_button" id="size_button" type="submit">Size</button>
+        <button class="stat_button" id="type_button" type="submit">Type</button>
+        <button class="stat_button" id="armour_class_type_button" type="submit"
+          >Armour Class Type</button
+        >
+        <button class="stat_button" id="actions_button" type="submit"
+          >Actions</button
+        >
+        <button class="stat_button" id="speed_button" type="submit"
+          >Speed</button
+        >
+      </div>
+
+      <div id="mosnter_info_display"></div>
+    </div>
+  </body>
+  <script src="./js.js"></script>
+</html>

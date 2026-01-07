@@ -1,3 +1,98 @@
+body {
+  background-color: #e0fbfc;
+  margin: 15px;
+}
+
+#main_header {
+  padding: 5px;
+  background-color: #ee6c4d;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main_header {
+  padding: 5px;
+  color: #e0fbfc;
+}
+
+#display_info {
+  background-color: #ee6c4d;
+}
+
+#mosnter_info_display {
+  color: #e0fbfc;
+  font-size: 35px;
+  height: 500px;
+}
+
+.button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.area_data_div {
+  padding: 5px;
+}
+
+.monster_input_div {
+  padding: 5px;
+}
+
+h2,
+h1 {
+  color: #e0fbfc;
+  font-size: 50px;
+}
+
+.search_div {
+  padding: 5px;
+}
+
+.header {
+  background-color: #ee6c4d;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Info Buttons */
+
+.stat_button {
+  background-color: #293241;
+  color: #e0fbfc;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.stat_button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
+.buttons {
+  background-color: #ee6c4d;
+  padding: 5px;
+  display: flex;
+}
+
+/* nav buttons */
+#spells {
+  background-color: #293241;
+  height: 50px;
+  width: auto;
+  color: #e0fbfc;
+  margin: 20px;
+}
+
+#races {
+  background-color: #293241;
+  height: 50px;
+  width: auto;
+  color: #e0fbfc;
+  margin: 20px;
 .racebtn {
   display: flex;
   justify-content: center;
