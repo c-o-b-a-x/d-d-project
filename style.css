@@ -48,3 +48,7 @@ a {
   padding: 25px;
   font-size: 1.25em;
 }
+a:hover {
+  color: lightgray;
+  transform: scale(1.06);
+}
