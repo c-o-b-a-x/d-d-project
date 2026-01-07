@@ -7,7 +7,7 @@ const requestOptions = {
   redirect: "follow",
 };
 
-fetch("https://www.dnd5eapi.co/api/2014/spells/:index", requestOptions)
+let spells = fetch("https://www.dnd5eapi.co/api/2014/spells/", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
